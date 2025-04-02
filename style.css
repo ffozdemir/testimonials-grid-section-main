@@ -13,10 +13,10 @@
   --color-neutral-dark-blue: hsl(219, 29%, 14%);
   --color-neutral-black: hsl(0, 0%, 7%);
   --font-family: "Barlow Semi Condensed", sans-serif;
-  --font-size: 13px;
+  --font-size: 0.813rem;
   --font-weight-500: 500;
   --font-weight-600: 600;
-  --border-radius: 5px;
+  --border-radius: 10px;
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -24,4 +24,83 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--color-purple-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+main {
+  max-width: 40rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1.5rem;
+  line-height: 1.5;
+}
+
+.card {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-image {
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 50%;
+}
+
+.brdr-purple-300{
+  border: 2px solid var(--color-purple-300);
+}
+
+.profile-info h2 {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-600);
+}
+
+.profile-info p {
+  font-size: 0.7rem;
+}
+
+.card-headline {
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-600);
+}
+
+.purple-500 {
+  background-color: var(--color-purple-500);
+  color: var(--color-neutral-white);
+}
+
+.grey-500 {
+  background-color: var(--color-neutral-grey-500);
+  color: var(--color-neutral-white);
+}
+
+.white {
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-black);
+}
+
+.dark-blue {
+  background-color: var(--color-neutral-dark-blue);
+  color: var(--color-neutral-white);
 }
