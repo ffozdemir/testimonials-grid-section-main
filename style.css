@@ -128,13 +128,16 @@ main {
     font-size: 1rem;
   }
 
-  .card{
-   justify-content: center;
-     }
+  .card {
+    justify-content: center;
+  }
 
   .daniel {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 5px;
   }
 
   .jonathan {
@@ -142,10 +145,10 @@ main {
     grid-row: 1 / 2;
   }
 
-.kira {
-   grid-column: 4 / 6;
-   grid-row: 1 / 3;
-}
+  .kira {
+    grid-column: 4 / 6;
+    grid-row: 1 / 3;
+  }
 
   .jeanette {
     grid-column: 1 / 2;
