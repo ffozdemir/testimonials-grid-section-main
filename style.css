@@ -74,7 +74,7 @@ main {
   border: 2px solid var(--color-purple-300);
 }
 
-.profile-info h2 {
+.card .profile-info h2 {
   font-size: var(--font-size);
 }
 
